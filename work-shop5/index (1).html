@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    let frukt = ["Banan", "Apple", "Melon", "Sjärnfrukt", "Papaya"];
+    let arr = [];
+for(var i=0; i<100; i++){
+    randomfrukt = frukt[Math.floor(Math.random() * 5)];
+    arr.push(randomfrukt);
+    }
+    const count = {};
+arr.forEach(element => {
+  count[element] = (count[element] || 0) + 1;
+});
+console.log('Banan' +'='+ count['Banan']);
+console.log('Äpple' +'='+ count['Apple']);
+console.log('Melon' +'='+ count['Melon']);
+console.log('Sjärnfrukt' +'='+ count['Sjärnfrukt']);
+console.log('Papaya' +'='+ count['Papaya']);
+console.log(count);
+</script>
+</body>
+</html>
